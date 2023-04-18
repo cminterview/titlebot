@@ -25,7 +25,7 @@ object QuickstartApp {
 
   def main(args: Array[String]): Unit = {
     val rootBehavior = Behaviors.setup[Nothing] { context =>
-      val supervisor = context.spawn(Supervisor(), "UserRegistryActor")
+      val supervisor = context.spawn(Supervisor(), "SupervisorActor")
 
       context.watch(supervisor)
 

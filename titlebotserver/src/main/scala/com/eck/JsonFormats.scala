@@ -9,7 +9,7 @@ object JsonFormats {
 
   import DefaultJsonProtocol._
 
-  implicit val userJsonFormat: RootJsonFormat[PageInfo] = jsonFormat3(PageInfo.apply)
+  implicit val pageInfoJsonFormat: RootJsonFormat[PageInfo] = jsonFormat3(PageInfo.apply)
 
 }
 
